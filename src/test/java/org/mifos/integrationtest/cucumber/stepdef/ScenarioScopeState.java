@@ -119,4 +119,6 @@ public class ScenarioScopeState {
     protected String fetchVoucherResponseBody;
 
     protected String rtpId;
+
+    protected ArrayList<String> transactionIds;
 }

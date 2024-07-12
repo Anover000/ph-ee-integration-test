@@ -17,6 +17,8 @@ operations-app:
     variables: "/api/v1/variables"
     transactionRequests: "/api/v1/transactionRequests"
     actuator: "/actuator/health"
+    delays: "api/v1/delays"
+    count: "api/v1/count"
 
 paybill:
   mpesa-connector:
@@ -275,3 +277,11 @@ fspconfig:
     payerfsp2: "gorilla"
 
 totalvouchers: 30
+
+zeebe-operations:
+  contactpoint: "https://zeebeops.sandbox.fynarfin.io"
+  endpoints:
+    workflow: "/channel/workflow/"
+    upload-bpmn: "/zeebe/upload"
+  no-of-workflows : 100
+  thread-count: 3

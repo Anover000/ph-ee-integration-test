@@ -40,6 +40,12 @@ public class OperationsAppConfig {
     @Value("${operations-app.endpoints.batches}")
     public String batchesEndpoint;
 
+    @Value("${operations-app.endpoints.delays}")
+    public String delayEndpoint;
+
+    @Value("${operations-app.endpoints.count}")
+    public String countEndpoint;
+
     @Value("${operations-app.username}")
     public String username;
 
